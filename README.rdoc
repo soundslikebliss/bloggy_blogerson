@@ -1,7 +1,10 @@
 == Bloggy Blogerson
 === aka, a blog app, Rails style
-=== incorporates Postgresql db, Bootstrap
+=== incorporates PostgreSQL db, user auth, Bootstrap
 
 
-* A simple Rails blog app that will initially allow CRUD for blog posts
-* Further functionality coming soon 
+* A simple Rails blog app:
+* CRUD for Posts [done]
+* Post and Comment association [done]
+* add Comments to Posts [done]
+* ...
