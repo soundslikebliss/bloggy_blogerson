@@ -1,0 +1,7 @@
+- @post.comments.each do |comment| 
+  .well
+    %strong Commenter:
+    %p= comment.commenter
+    %strong Comment:
+    %p= comment.body 
+    %p= link_to "Delete Comment", [comment.post, comment], :confirm => 'Are you sure?', :method => :delete

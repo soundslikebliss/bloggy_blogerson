@@ -8,6 +8,9 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
+gem 'local_time'
+gem 'haml'
+gem 'devise'
 
 group :development do
   gem 'better_errors'
