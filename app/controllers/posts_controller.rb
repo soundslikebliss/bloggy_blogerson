@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  authorize_resource
+  
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -22,7 +24,6 @@ class PostsController < ApplicationController
   # POST /posts
   def create
     @post = Post.new(post_params)
-
     if @post.save
       redirect_to @post, notice: 'Post was successfully created.'
     else
@@ -53,6 +54,6 @@ class PostsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def post_params
-      params.require(:post).permit(:name, :title, :content)
+      params.require(:post).permit(:user_id, :name, :title, :content)
     end
 end

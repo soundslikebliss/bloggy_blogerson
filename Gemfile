@@ -11,6 +11,7 @@ gem 'bootstrap-sass'
 gem 'local_time'
 gem 'haml'
 gem 'devise'
+gem "cancan"
 
 group :development do
   gem 'better_errors'
