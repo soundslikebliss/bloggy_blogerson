@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  authorize_resource
+  authorize_resource 
   
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
