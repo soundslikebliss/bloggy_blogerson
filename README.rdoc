@@ -10,18 +10,19 @@
 * implement Devise user auth [done]
 * implement CanCan authorization [done]
  - restrict update, delete of Post to owner [done]
- - restrict delete of Comment to owner [in progress]
+ - restrict delete of Comment to owner [done]
  - implement admin ability with CanCan [coming soon]
 
 
-[need to do]
 * get rid of name field in new post form partial, 
   - on post index page, name should tie into post.user.name....
   (not from form name input, which is now deleted)
+ [done]
   
 * get rid of name field in for new comment form
-  -when rendering comment, pull commenter name from comment.user.name...
+  - when rendering comment, pull commenter name from comment.user.name...
   (not from form name input, which is now deleted)
+ [done]
   
   
  
