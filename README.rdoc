@@ -3,7 +3,7 @@
 === incorporates PostgreSQL db, Devise, CanCanCan, Bootstrap
 
 
-* A simple Rails blog app:
+==== A simple Rails blog app:
 * CRUD for Posts [done]
 * Post and Comment association [done]
 * add Comments to Posts [done]
@@ -11,5 +11,17 @@
 * implement CanCan authorization [done]
  - restrict update, delete of Post to owner [done]
  - restrict delete of Comment to owner [in progress]
- ...
+ - implement admin ability with CanCan [coming soon]
+
+
+[need to do]
+* get rid of name field in new post form partial, 
+  - on post index page, name should tie into post.user.name....
+  (not from form name input, which is now deleted)
+  
+* get rid of name field in for new comment form
+  -when rendering comment, pull commenter name from comment.user.name...
+  (not from form name input, which is now deleted)
+  
+  
  
