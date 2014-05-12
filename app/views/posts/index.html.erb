@@ -1,7 +1,6 @@
 <h1>Posts:</h1>
 <br>
 <br>
-<br>
 
 <table class="table table-hover">
   <thead>
@@ -40,4 +39,6 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<% if current_user %>
+  <%= link_to 'New Post', new_post_path %>
+<% end %>
